@@ -330,10 +330,130 @@ img {
     :: 6.0 Counter CSS
         ================================================ */
 
+.counter_area {
+  padding: 6.875rem 0 1.875rem;
+}
+
+.single_counter {
+  position: relative;
+}
+
+.single_counter span {
+  font-size: 3rem;
+  background: var(--bg-gradient);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.single_counter::after {
+  position: absolute;
+  content: "";
+  height: 100%;
+  width: 0.063rem;
+  background-color: var(--bg-black);
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  opacity: 0.15;
+}
+
+.single_counter:last-child::after {
+  display: none;
+}
+
 /*  ================================================
     :: 7.0 Promo CSS
         ================================================ */
 
+.promo_section {
+  padding: 6.25rem 0 4rem;
+}
+
+.section_headline {
+  margin-bottom: 2.813rem;
+}
+
+.section_headline > h2 {
+  position: relative;
+  padding: 2.5rem;
+}
+
+.section_headline > h2::after {
+  position: absolute;
+  content: "";
+  height: 0.125rem;
+  width: 4.563rem;
+  background: var(--bg-light-pink);
+  bottom: 1.125rem;
+  left: 50%;
+  transform: translateX(-50%);
+  -webbkit-transform: translateX(-50%);
+}
+
+.section_headline h2 span {
+  font-weight: 400;
+  font-size: 2rem;
+}
+
+.single_promo_hover {
+  -webkit-transition: all 0.2s ease-out;
+  -moz-transition: all 0.2s ease-out;
+  -o-transition: all 0.2s ease-out;
+  -ms-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+  will-change: transform;
+}
+
+.single_promo_1 {
+  box-shadow: 0 3px 20px 0px rgb(0 0 0 / 12%);
+  border-radius: 1.5rem;
+  padding: 1.875rem 2.5rem 2.5rem;
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 2.5rem;
+}
+
+.single_promo_1::before {
+  position: absolute;
+  content: "";
+  width: 0.0635rem;
+  height: 0.125rem;
+  top: 0;
+  left: 0;
+  border-radius: 50%;
+  -webkit-transition: all 0.2s ease-out;
+  -moz-transition: all 0.2s ease-out;
+  -o-transition: all 0.2s ease-out;
+  -ms-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+}
+
+.single_promo_1:hover::before {
+  width: 100%;
+  background: var(--bg-gradient);
+}
+
+.single_promo_hover:hover {
+  box-shadow: 0 2rem 5rem rgb(0 0 0 / 12%);
+}
+
+.single_promo_1 span {
+  font-size: 30px;
+  background-image: url(../images/promo-icon-bg.png);
+  padding: 54px 0 57px 0;
+  display: block;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.single_promo_1 h2{
+  padding-bottom: 0.438rem;
+}
+
+.single_promo_1 p{
+  padding-top: 0.625rem;
+  font-size: 0.938rem;
+}
 /*  ================================================
     :: 8.0 Features CSS
         ================================================ */

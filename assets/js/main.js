@@ -13,10 +13,10 @@ function navMenu(){
         // apply transition
         if (scroll >= 250) {
             navBar.classList.add("navbar-sticky-transitioned");
-            scrollTopButton.classList.add('scrollActive');
+            // scrollTopButton.classList.add('scrollActive');
         } else {
             navBar.classList.remove("navbar-sticky-transitioned");
-            scrollTopButton.classList.remove('scrollActive');
+            // scrollTopButton.classList.remove('scrollActive');
         }
         // sticky on
         if (scroll >= 500) {
@@ -50,38 +50,38 @@ document.addEventListener("DOMContentLoaded", () => {
     counter("count4", 0, 10, 2000);
  });
 
- // APP-SCREEN
- var swiper = new Swiper( '.swiper-container.app-screen', {
-    effect: 'coverflow',
-    loop: true,
-    autoplaySpeed: 3000,
-    centeredSlides: true,
-    slidesPerView: 'auto',
-    autoplay: {
-        delay: 5000,
-        disableOnInteraction: false
-    },
-    pagination: {
-        el: '.swiper-pagination',
-        clickable: true,
-    },
-    paginationClickable: true,
-    coverflow: {
-        rotate: 0,
-        stretch: 100,
-        depth: 150,
-        modifier: 1.5,
-        slideShadows : false,
-    }
-});  
+//  // APP-SCREEN
+//  var swiper = new Swiper( '.swiper-container.app-screen', {
+//     effect: 'coverflow',
+//     loop: true,
+//     autoplaySpeed: 3000,
+//     centeredSlides: true,
+//     slidesPerView: 'auto',
+//     autoplay: {
+//         delay: 5000,
+//         disableOnInteraction: false
+//     },
+//     pagination: {
+//         el: '.swiper-pagination',
+//         clickable: true,
+//     },
+//     paginationClickable: true,
+//     coverflow: {
+//         rotate: 0,
+//         stretch: 100,
+//         depth: 150,
+//         modifier: 1.5,
+//         slideShadows : false,
+//     }
+// });  
 
-// Side Navigation Bar Close While We click On Navigation Links
+// // Side Navigation Bar Close While We click On Navigation Links
 
-let navBar = document.querySelectorAll('.nav-link');
-let navCollapse = document.querySelector('.navbar-collapse.collapse');
-navBar.forEach(function(a){
-    a.addEventListener("click", function(){
-        navCollapse.classList.remove("show");
-    })
-}) 
+// let navBar = document.querySelectorAll('.nav-link');
+// let navCollapse = document.querySelector('.navbar-collapse.collapse');
+// navBar.forEach(function(a){
+//     a.addEventListener("click", function(){
+//         navCollapse.classList.remove("show");
+//     })
+// }) 
 
