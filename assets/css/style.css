@@ -543,6 +543,31 @@ img {
     :: 9.0 app-screenshots CSS
         ================================================ */
 
+.app-screen {
+  padding-bottom: 5.313rem;
+}
+
+.app-screen .swiper-slide {
+  width: 263px !important;
+  height: auto;
+}
+
+.swiper-pagination {
+  height: 10rem;
+  z-index: 999;
+  color: red;
+}
+.swiper-container-horizontal
+  > .swiper-pagination-bullets
+  .swiper-pagination-bullet {
+  margin: 0 0.5rem;
+}
+
+.swiper-pagination-bullet {
+  width: 0.75rem;
+  height: 0.75rem;
+}
+
 /*  ================================================
     :: 10.0 pricing CSS
         ================================================ */
